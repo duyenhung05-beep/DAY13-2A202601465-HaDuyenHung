@@ -1,0 +1,2 @@
+LANGFUSE_ENABLED=false
+Credentials were not configured in .env; no managed traces or prompt version IDs were created. Trace IDs are intentionally unavailable.

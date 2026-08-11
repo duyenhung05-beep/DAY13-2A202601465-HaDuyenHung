@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Day 13 AI Observability</title><meta http-equiv='refresh' content='30'><style>body{font-family:system-ui;max-width:1100px;margin:2rem auto;background:#f5f7fb;color:#172033}main{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}section{background:white;padding:1rem;border-radius:10px;box-shadow:0 1px 5px #ccd}h1{margin-bottom:.2rem}pre{white-space:pre-wrap}</style></head><body><h1>Day 13 AI Observability</h1><p>Time range: last 60 minutes · Refresh: 30 seconds · Source: data/logs.jsonl</p><main><section><h2>Latency percentiles</h2><p>Unit: ms · Threshold: lte 3000 (p95)</p><pre>{}</pre></section><section><h2>Request traffic</h2><p>Unit: requests_per_minute · Threshold: gte 1 (rate_per_minute)</p><pre>{
+  "count": 25,
+  "requests_per_minute": 0.42
+}</pre></section><section><h2>Error rate and breakdown</h2><p>Unit: percent · Threshold: lte 2 (error_rate_pct)</p><pre>{
+  "rate_pct": 0.0,
+  "breakdown": {}
+}</pre></section><section><h2>Cost over time</h2><p>Unit: usd · Threshold: lte 2.5 (total)</p><pre>{
+  "total_usd": 0.051396
+}</pre></section><section><h2>Input and output tokens</h2><p>Unit: tokens · Threshold: lte 50000 (sum_by_field)</p><pre>{
+  "tokens_in": 822,
+  "tokens_out": 3262
+}</pre></section><section><h2>Quality proxy</h2><p>Unit: score_0_to_1 · Threshold: gte 0.75 (mean)</p><pre>{
+  "mean": 0.876
+}</pre></section></main></body></html>
