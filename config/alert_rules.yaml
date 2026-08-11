@@ -1,19 +1,19 @@
 alerts:
-  - name: TODO_alert_1
-    severity: TODO
-    condition: TODO
+  - name: high_latency_p95
+    severity: warning
+    condition: response_sent latency_ms P95 > 3000ms for 5m
     type: symptom-based
-    owner: TODO
+    owner: Hà Duyên Hùng
     runbook: docs/alerts.md#alert-1
-  - name: TODO_alert_2
-    severity: TODO
-    condition: TODO
+  - name: elevated_error_rate
+    severity: critical
+    condition: request_failed / request_received > 2% for 5m
     type: symptom-based
-    owner: TODO
+    owner: Hà Duyên Hùng
     runbook: docs/alerts.md#alert-2
-  - name: TODO_alert_3
-    severity: TODO
-    condition: TODO
+  - name: low_quality_proxy
+    severity: warning
+    condition: mean response_sent.quality_score < 0.75 for 10m
     type: symptom-based
-    owner: TODO
+    owner: Hà Duyên Hùng
     runbook: docs/alerts.md#alert-3
